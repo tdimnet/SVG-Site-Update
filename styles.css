@@ -115,9 +115,16 @@ footer {
 
 /* Nav icons style
 */
-.nav-heart svg {
-  display: inline-block;
-  max-height: 14px;
+.heart-icon,
+.location-icon,
+.contact-icon {
+  height: 14px;
+}
+
+.heart-icon .st0,
+.location-icon .st0,
+.contact-icon .st0 {
+  fill: #39add1;
 }
 
 
@@ -155,6 +162,16 @@ footer {
 .logo .st2:nth-of-type(2) {
   animation-delay: 1.2s;
 }
+
+
+
+/* Corgi styles
+ */
+.corgi-elt {
+  height: 170px;
+  margin-bottom: 15px;
+}
+
 
 
 /*
