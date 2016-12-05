@@ -1,3 +1,7 @@
+/*
+  INITIAL STYLE
+*/
+
 body {
   margin: 0;
   padding: 0;
@@ -75,4 +79,98 @@ footer {
   margin-top: 100px;
   padding-bottom: 30px;
   color: #ba8058;
+}
+
+
+
+/*
+  KEYFRAMES
+*/
+@keyframes logoscale {
+  0% {
+    transform: scale(1) rotate(0deg);
+  }
+  50% {
+    transform: scale(1.15) rotate(20deg);
+  }
+  100% {
+    transform: scale(0.9) rotate(0deg);
+  }
+}
+
+@keyframes logotext {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+
+
+/*
+  SVG STYLES
+*/
+
+/* Nav icons style
+*/
+.nav-heart svg {
+  display: inline-block;
+  max-height: 14px;
+}
+
+
+
+/* Logo style
+ */
+.logo {
+  display: block;
+  max-width: 140px;
+  margin: 0 auto;
+}
+
+.logo .st1 {
+  animation: logotext .7s 1.7s linear backwards;
+}
+
+.logo .st2 {
+  transform-origin: 50% 50%;
+  transition: .4s;
+  animation: logoscale .6s 0s linear backwards;
+}
+
+.logo .st2:hover {
+  fill: #ddd;
+}
+
+.logo .st2:nth-of-type(1) {
+  animation-delay: .4s;
+}
+
+.logo .st2:nth-of-type(3) {
+  animation-delay: .8s;
+}
+
+.logo .st2:nth-of-type(2) {
+  animation-delay: 1.2s;
+}
+
+
+/*
+  RESPONSIVE
+*/
+
+.text-logo {
+  display: none;
+}
+
+@media screen and (max-width: 420px) {
+  .logo .st1 {
+    display: none;
+  }
+  .text-logo {
+    font-size: 1.7em;
+    display: inline;
+  }
 }
