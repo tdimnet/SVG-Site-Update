@@ -182,6 +182,10 @@ footer {
  /* CORIG RED Style */
 .corgi-red .st0 {
   fill:#BA8058;
+  transition: .6s;
+}
+.corgi-red:hover .st0 {
+  fill:#777;
 }
 .corgi-red .st1 {
   fill:#FBFEFF;
@@ -197,6 +201,10 @@ footer {
  /* CORIG FAWN Style */
 .corgi-fawn .st0 {
   fill:#EAAA7F;
+  transition: .6s;
+}
+.corgi-fawn:hover .st0 {
+  fill:#F66809;
 }
 .corgi-fawn .st1 {
   fill:#FBFEFF;
@@ -212,6 +220,10 @@ footer {
 /* CORIG SABLE Style */
 .corgi-sable .st0 {
   fill:#844B24;
+  transition: .6s;
+}
+.corgi-sable:hover .st0 {
+  fill:#472915;
 }
 .corgi-sable .st1 {
   fill:#FBFEFF;
@@ -227,6 +239,11 @@ footer {
 /* CORIG BLACKTAN Style */
 .corgi-blacktan .st0 {
   fill:#BA8058;
+  transition: .6s;
+}
+.corgi-blacktan:hover .st0,
+.corgi-blacktan:hover .st1 {
+  fill:#D2BFB1;
 }
 .corgi-blacktan .st1 {
   fill:#52595F;
