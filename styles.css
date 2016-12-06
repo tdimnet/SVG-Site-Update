@@ -31,9 +31,6 @@ a {
   color: #39add1;
   font-weight: 700;
   }
-  a:hover {
-    color: #111;
-  }
 
 header {
   padding-top: 10px;
@@ -119,14 +116,23 @@ footer {
 .location-icon,
 .contact-icon {
   height: 14px;
+  transform-origin: 50% 50%;
 }
 
 .heart-icon .st0,
 .location-icon .st0,
 .contact-icon .st0 {
   fill: #39add1;
+  transition: .6s;
 }
-
+a:hover .st0 {
+  fill: #666;
+  transform: scale(0.8);
+}
+a:hover span {
+  color: #666;
+  text-decoration: underline;
+}
 
 
 /* Logo style
