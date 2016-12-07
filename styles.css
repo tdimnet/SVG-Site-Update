@@ -83,15 +83,41 @@ footer {
 /*
   KEYFRAMES
 */
-@keyframes logoscale {
+@-webkit-keyframes logoscale {
   0% {
-    transform: scale(1) rotate(0deg);
+    -webkit-transform: scale(1) rotate(0deg);
+            transform: scale(1) rotate(0deg);
   }
   50% {
-    transform: scale(1.15) rotate(20deg);
+    -webkit-transform: scale(1.15) rotate(20deg);
+            transform: scale(1.15) rotate(20deg);
   }
   100% {
-    transform: scale(0.9) rotate(0deg);
+    -webkit-transform: scale(0.9) rotate(0deg);
+            transform: scale(0.9) rotate(0deg);
+  }
+}
+@keyframes logoscale {
+  0% {
+    -webkit-transform: scale(1) rotate(0deg);
+            transform: scale(1) rotate(0deg);
+  }
+  50% {
+    -webkit-transform: scale(1.15) rotate(20deg);
+            transform: scale(1.15) rotate(20deg);
+  }
+  100% {
+    -webkit-transform: scale(0.9) rotate(0deg);
+            transform: scale(0.9) rotate(0deg);
+  }
+}
+
+@-webkit-keyframes logotext {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
   }
 }
 
@@ -116,18 +142,21 @@ footer {
 .location-icon,
 .contact-icon {
   height: 14px;
-  transform-origin: 50% 50%;
+  -webkit-transform-origin: 0px 0px;
+          transform-origin: 0px 0px;
 }
 
 .heart-icon .st0,
 .location-icon .st0,
 .contact-icon .st0 {
   fill: #39add1;
+  -webkit-transition: .6s;
   transition: .6s;
 }
 a:hover .st0 {
   fill: #666;
-  transform: scale(0.8);
+  -webkit-transform: scale(0.8);
+          transform: scale(0.8);
 }
 a:hover span {
   color: #666;
@@ -149,15 +178,19 @@ a:hover span {
 
 .logo .st1 {
   fill:#EAAA7F;
-  animation: logotext .7s 1.7s linear backwards;
+  -webkit-animation: logotext .7s 1.7s linear backwards;
+          animation: logotext .7s 1.7s linear backwards;
 
 }
 
 .logo .st2 {
   fill:#F4C6A6;
-  transform-origin: 50% 50%;
+  -webkit-transform-origin: 50% 50%;
+          transform-origin: 50% 50%;
+  -webkit-transition: .4s;
   transition: .4s;
-  animation: logoscale .6s 0s linear backwards;
+  -webkit-animation: logoscale .6s 0s linear backwards;
+          animation: logoscale .6s 0s linear backwards;
 }
 
 .logo .st2:hover {
@@ -165,15 +198,18 @@ a:hover span {
 }
 
 .logo .st2:nth-of-type(1) {
-  animation-delay: .4s;
+  -webkit-animation-delay: .4s;
+          animation-delay: .4s;
 }
 
 .logo .st2:nth-of-type(3) {
-  animation-delay: .8s;
+  -webkit-animation-delay: .8s;
+          animation-delay: .8s;
 }
 
 .logo .st2:nth-of-type(2) {
-  animation-delay: 1.2s;
+  -webkit-animation-delay: 1.2s;
+          animation-delay: 1.2s;
 }
 
 
@@ -188,6 +224,7 @@ a:hover span {
  /* CORIG RED Style */
 .corgi-red .st0 {
   fill:#BA8058;
+  -webkit-transition: .6s;
   transition: .6s;
 }
 .corgi-red:hover .st0 {
@@ -207,6 +244,7 @@ a:hover span {
  /* CORIG FAWN Style */
 .corgi-fawn .st0 {
   fill:#EAAA7F;
+  -webkit-transition: .6s;
   transition: .6s;
 }
 .corgi-fawn:hover .st0 {
@@ -226,6 +264,7 @@ a:hover span {
 /* CORIG SABLE Style */
 .corgi-sable .st0 {
   fill:#844B24;
+  -webkit-transition: .6s;
   transition: .6s;
 }
 .corgi-sable:hover .st0 {
@@ -245,6 +284,7 @@ a:hover span {
 /* CORIG BLACKTAN Style */
 .corgi-blacktan .st0 {
   fill:#BA8058;
+  -webkit-transition: .6s;
   transition: .6s;
 }
 .corgi-blacktan:hover .st0,
